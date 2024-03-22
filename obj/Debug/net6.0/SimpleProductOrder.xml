@@ -1,0 +1,57 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>SimpleProductOrder</name>
+    </assembly>
+    <members>
+        <member name="M:SimpleProductOrder.Controllers.AccountController.GetAccounts">
+            <summary>
+            Get all accounts
+            </summary>
+            <returns>
+            returns list of accounts
+            </returns>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.AccountController.GetAccount(System.Int32)">
+            <summary>
+            Get account with selected id
+            </summary>
+            <returns>
+            returns account 
+            </returns>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.AccountController.CreateAccount(System.Int32,SimpleProductOrder.Dto.AccountDto)">
+             <summary>
+             Add account
+             </summary>
+             <returns>
+             returns a newly created account
+             </returns>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Account
+                 {
+                    "login": "John",
+                    "password": "Doe"
+                 }
+            
+             </remarks>
+        </member>
+        <member name="M:SimpleProductOrder.Controllers.CategoryController.CreateCategory(SimpleProductOrder.Dto.CategoryDto)">
+             <summary>
+             Add category
+             </summary>
+             <remarks>
+             Sample request:
+            
+                 POST /api/Category
+                 {
+                    "login": "John",
+                    "password": "Doe"
+                 }
+            
+             </remarks>
+        </member>
+    </members>
+</doc>
